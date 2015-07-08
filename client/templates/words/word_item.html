@@ -3,5 +3,10 @@
         <td>{{portuguese}}</td>
         <td>{{english}}</td>
         <td>{{chinese}}</td>
+        <td>
+            {{#if currentUser}}
+                <a class="btn btn-primary" href="{{pathFor 'editWord'}}" role="button">Edit</a>
+            {{/if}}
+        </td>
     </tr>
 </template>

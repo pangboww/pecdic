@@ -20,7 +20,7 @@ Meteor.startup(function(){
             english: "I want to go to Lucas's home",
             chinese: 'wo xiang qu Lucas jia',
             author: defaultUser.profile.name,
-            created: new Date(now - 7 * 3600 * 1000)
+            created: new Date(now - 6 * 3600 * 1000)
         });
 
         Words.insert({
@@ -28,7 +28,7 @@ Meteor.startup(function(){
             english: 'I will take the juice',
             chinese: 'wo yao he guo zhi',
             author: defaultUser.profile.name,
-            created: new Date(now - 7 * 3600 * 1000)
+            created: new Date(now - 5 * 3600 * 1000)
         });
 
         Words.insert({
@@ -36,9 +36,16 @@ Meteor.startup(function(){
             english: 'I can use the bathroom?',
             chinese: 'wo ke yi yong xi shou jian me?',
             author: defaultUser.profile.name,
-            created: new Date(now - 7 * 3600 * 1000)
+            created: new Date(now - 4 * 3600 * 1000)
         });
 
+        Words.insert({
+            portuguese: 'Parabéns Franzé',
+            english: 'Happy Birthday Franzé',
+            chinese: 'Sheng Ri Kuai Le Franzé',
+            author: defaultUser.profile.name,
+            created: new Date(now - 3 * 3600 * 1000)
+        });
 
 
     }
