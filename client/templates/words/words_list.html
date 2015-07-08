@@ -1,0 +1,23 @@
+<template name="wordsList">
+    <div class="words page">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Words List</div>
+            <div class="panel-body">
+                <p>This words list is designed for Franzé and Bo. It's mainly for helping learning Portuguese and
+                Chinese. Please fell free to add new word to this list.
+                </p>
+                <a class="btn btn-primary" href="/add" role="button">Add</a>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr><th>Português</th><th>English</th><th>Zhong Wen</th></tr>
+                </thead>
+                <tbody>
+                    {{#each words}}
+                        {{> wordItem}}
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>

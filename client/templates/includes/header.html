@@ -1,5 +1,5 @@
 <template name="header">
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-primary" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
                 <span class="sr-only">Toggle navigation</span>
@@ -11,20 +11,6 @@
         </div>
         <div class="collapse navbar-collapse" id="navigation">
             <ul class="nav navbar-nav">
-                <!--<li class="{{activeRouteClass 'home' 'newPosts'}}">-->
-                    <!--<a href="{{pathFor 'newPosts'}}">New</a>-->
-                <!--</li>-->
-                <!--<li class="{{activeRouteClass  'bestPosts'}}">-->
-                    <!--<a href="{{pathFor 'bestPosts'}}">Best</a>-->
-                <!--</li>-->
-                <!--{{#if currentUser}}-->
-                    <!--<li class="{{activeRouteClass 'postSubmit'}}">-->
-                        <!--<a href="{{pathFor 'postSubmit'}}">Submit Post</a>-->
-                    <!--</li>-->
-                    <!--<li class="dropdown">-->
-                        <!--{{> notifications}}-->
-                    <!--</li>-->
-                <!--{{/if}}-->
                 <li class="active">
                     <a href="{{pathFor 'home'}}">Home</a>
                 </li>
