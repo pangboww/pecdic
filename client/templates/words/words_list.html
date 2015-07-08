@@ -6,7 +6,12 @@
                 <p>This words list is designed for Franzé and Bo. It's mainly for helping learning Portuguese and
                 Chinese. Please fell free to add new word to this list.
                 </p>
-                <a class="btn btn-primary" href="/add" role="button">Add</a>
+                {{#if currentUser}}
+                    <a class="btn btn-primary" href="/add" role="button">Add</a>
+                {{else}}
+                    <div class="alert alert-info" role="alert">Please sign in to add new word.</div>
+                {{/if}}
+
             </div>
             <table class="table">
                 <thead>

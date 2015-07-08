@@ -1,21 +1,24 @@
 <template name="addWord">
     <form class="main form page">
-        <div class="form-group">
+        <div class="form-group {{errorClass 'portuguese'}}">
             <label class="control-label" for="portuguese">Português</label>
             <div class="controls">
                 <input name="portuguese" id="portuguese" type="text" value="" placeholder="Olá" class="form-control"/>
+                <span class="help-block">{{errorMessage 'portuguese'}}</span>
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group {{errorClass 'english'}}">
             <label class="control-label" for="english">English</label>
             <div class="controls">
                 <input name="english" id="english" type="text" value="" placeholder="Hello" class="form-control"/>
+                <span class="help-block">{{errorMessage 'english'}}</span>
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group {{errorClass 'chinese'}}">
             <label class="control-label" for="chinese">Zhong Wen</label>
             <div class="controls">
                 <input name="chinese" id="chinese" type="text" value="" placeholder="Ni Hao" class="form-control"/>
+                <span class="help-block">{{errorMessage 'chinese'}}</span>
             </div>
         </div>
         <input type="submit" value="Submit" class="btn btn-primary"/>
