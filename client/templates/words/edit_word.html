@@ -21,6 +21,13 @@
                 <span class="help-block">{{errorMessage 'chinese'}}</span>
             </div>
         </div>
+        <div class="form-group {{errorClass 'hanzi'}}">
+            <label class="control-label" for="hanzi">汉字</label>
+            <div class="controls">
+                <input name="hanzi" id="hanzi" type="text" value="{{hanzi}}" placeholder="你好" class="form-control"/>
+                <span class="help-block">{{errorMessage 'hanzi'}}</span>
+            </div>
+        </div>
         <input type="submit" value="Submit" class="btn btn-primary"/>
         <a class="btn btn-danger delete" href="#">Delete</a>
     </form>

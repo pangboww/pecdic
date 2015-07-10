@@ -17,11 +17,12 @@ Template.addWord.events({
         var word = {
             portuguese: $(e.target).find('[name=portuguese]').val(),
             english: $(e.target).find('[name=english]').val(),
-            chinese: $(e.target).find('[name=chinese]').val()
+            chinese: $(e.target).find('[name=chinese]').val(),
+            hanzi: $(e.target).find('[name=hanzi]').val()
         };
 
         var errors = validateWord(word);
-        if (errors.portuguese || errors.english || errors.chinese)
+        if (errors.portuguese || errors.english || errors.chinese || errors.hanzi)
             return Session.set('addWordErrors', errors);
 
         Meteor.call('wordInsert', word, function(error, result) {
